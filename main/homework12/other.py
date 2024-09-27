@@ -65,13 +65,10 @@ class Solution(object):
         """
         if target in nums:
             return nums.index(target)
-
-        indx = 0
-
-        while nums[indx] <= target:
-            indx += 1
-
-        return indx
+        for i in nums:
+            if i >= target:
+                return nums.index(i)
+        return len(nums)
 
 sol = Solution()
 print(sol.findMedianSortedArrays([1,2], [3,4]))
