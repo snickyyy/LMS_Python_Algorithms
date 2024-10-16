@@ -25,7 +25,7 @@ class TestNameFormater(unittest.TestCase):
         self.assertEqual(formatted_name('j', 'd', 's'), 'J S D')
 
 def main():
-    print(formatted_name('john', 'doe', ""))
+    unittest.main()
 
 
 if __name__ == "__main__":
